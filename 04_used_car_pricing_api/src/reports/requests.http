@@ -10,3 +10,22 @@ content-type: application/json
   "lat": 0,
   "price": 50000
 }
+
+
+### Approve the report
+PATCH http://localhost:3000/reports/2
+content-type: application/json
+
+{
+  "approved": true
+}
+
+
+### Get Milage of vehicle
+PATCH http://localhost:3000/reports/2
+content-type: application/json
+
+{
+  "approved": true
+}
+
