@@ -2,13 +2,13 @@ import { Body, Controller, Delete, Get, NotFoundException, Param, Patch, Post, Q
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UsersService } from './users.service';
 import { UpdateUserDto } from './dtos/update-user.dto';
-import { Serialize } from 'src/interceptors/serialize.interceptor';
+import { Serialize } from '../interceptors/serialize.interceptor';
 import { UserDto } from './dtos/user.dto';
 import { AuthService } from './auth.service';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { CurrentUserInterceptor } from './interceptors/current-user.interceptor';
 import { User } from './users.entity';
-import { AuthGuard } from 'src/guards/auth.guards';
+import { AuthGuard } from '../guards/auth.guards';
 
 @Controller('auth')
 @Serialize(UserDto)
